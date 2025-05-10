@@ -16,7 +16,7 @@ export const collections = {
 			email: z.string().optional(),
 			website: z.string().optional(),
 			github: z.string().optional(),
-			img: z.string().optional(),
+			img: z.string(),
 			img_alt: z.string().optional(),
 		}),
 	}),
