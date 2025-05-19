@@ -7,12 +7,14 @@ import tailwindcss from '@tailwindcss/vite';
 
 import sitemap from '@astrojs/sitemap';
 
+import mdx from '@astrojs/mdx';
+
 // https://astro.build/config
 export default defineConfig({
   devToolbar: { enabled: false },
   site: 'https://rs691.github.io',
   base: '/robert-stewart-astro/',
-  integrations: [react(), sitemap()],
+  integrations: [react(), sitemap(), mdx()],
 
   vite: {
     plugins: [tailwindcss()],
